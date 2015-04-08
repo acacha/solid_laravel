@@ -1,4 +1,4 @@
-<?php namespace App\Commands;
+<?php namespace SolidLaravel\Commands;
 
 abstract class Command {
 

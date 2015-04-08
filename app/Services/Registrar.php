@@ -1,6 +1,6 @@
-<?php namespace App\Services;
+<?php namespace SolidLaravel\Services;
 
-use App\User;
+use SolidLaravel\User;
 use Validator;
 use Illuminate\Contracts\Auth\Registrar as RegistrarContract;
 
