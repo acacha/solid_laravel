@@ -3,18 +3,18 @@
  * Created by Sergi Tur Badenas @2015
  * http://acacha.org/sergitur
  * http://acacha.org
- * Date: 15/04/15
- * Time: 11:54
+ * Date: 08/04/15
+ * Time: 18:24
  */
 
 namespace SolidLaravel\Output;
 
+use SolidLaravel\Output\Contracts\InvoiceShowInterface;
 
-class InvoiceShow {
+class InvoiceShowText implements InvoiceShowInterface {
 
     public function show($invoice)
     {
-        return "<strong>" . $invoice->totalAmmount . " </strong>";
+        return $invoice->totalAmmount;
     }
-
 }
