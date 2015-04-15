@@ -1,6 +1,6 @@
 <?php namespace SolidLaravel;
 
-use SolidLaravel\Output\Contracts\InvoiceShowInterface;
+use SolidLaravel\Output\InvoiceShow;
 use SolidLaravel\Repositories\InvoiceRepository;
 
 class InvoiceReport {
@@ -13,7 +13,7 @@ class InvoiceReport {
         $this->invoice = $repo->get($id);
     }
 
-    public function show(InvoiceShowInterface $i){
+    public function show(InvoiceShow $i){
         return $i->show($this->invoice);
     }
 }

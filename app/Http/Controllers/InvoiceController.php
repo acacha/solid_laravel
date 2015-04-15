@@ -5,7 +5,7 @@ use SolidLaravel\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 use SolidLaravel\InvoiceReport;
-use SolidLaravel\Output\InvoiceShowHtml;
+use SolidLaravel\Output\InvoiceShow;
 use SolidLaravel\Repositories\InvoiceRepository;
 
 class InvoiceController extends Controller {
@@ -28,7 +28,7 @@ class InvoiceController extends Controller {
     public function index()
     {
         $invoice = new InvoiceReport(new InvoiceRepository(),1);
-        return view('invoice')->with('totalAmmount',$invoice->show(new InvoiceShowHtml()));
+        return view('invoice')->with('totalAmmount',$invoice->show(new InvoiceShow()));
     }
 
 }

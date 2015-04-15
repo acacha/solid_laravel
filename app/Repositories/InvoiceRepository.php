@@ -17,7 +17,7 @@ class InvoiceRepository {
     /**
      * Return invoice from the database
      * @param $id - The ID of the requested invoice
-     * @return Eloquen object
+     * @return Eloquent object
      */
     public function get($id) {
         return Invoices::find($id);
