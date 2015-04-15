@@ -9,10 +9,14 @@
 
 namespace SolidLaravel\Repositories;
 
-
 use SolidLaravel\Invoices;
+use SolidLaravel\Repositories\Contracts\InvoiceRepositoryInterface;
 
-class InvoiceRepository {
+/**
+ * Class InvoiceRepositoryDB
+ * @package SolidLaravel\Repositories
+ */
+class InvoiceRepositoryDB implements InvoiceRepositoryInterface {
 
     /**
      * Return invoice from the database
@@ -20,7 +24,7 @@ class InvoiceRepository {
      * @return Eloquent object
      */
     public function get($id) {
-        return Invoices::find($id);
+        //TODO: get Invoice from file!
     }
 
 }

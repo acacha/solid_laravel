@@ -1,14 +1,14 @@
 <?php namespace SolidLaravel;
 
 use SolidLaravel\Output\Contracts\InvoiceShowInterface;
-use SolidLaravel\Repositories\InvoiceRepository;
+use SolidLaravel\Repositories\Contracts\InvoiceRepositoryInterface;
 
 class InvoiceReport {
 
 
     private $invoice;
 
-    function __construct(InvoiceRepository $repo, $id)
+    function __construct(InvoiceRepositoryInterface $repo, $id)
     {
         $this->invoice = $repo->get($id);
     }
