@@ -1,7 +1,7 @@
 # solid_laravel
 solid_laravel example. 
 
-SOLID principles examples using Laravel.
+[SOLID http://acacha.org/mediawiki/SOLID] principles examples using Laravel.
 
 Sergi Tur Badenas sergiturbadenas@gmail.com at http://acacha.org | http://acacha.org/sergitur
 
