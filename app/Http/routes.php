@@ -11,6 +11,9 @@
 |
 */
 
+//App::bind('SolidLaravel\Repositories\Contracts\InvoiceRepositoryInterface','SolidLaravel\Repositories\InvoiceRepositoryDB');
+//App::bind('SolidLaravel\Output\Contracts\InvoiceShowInterface','SolidLaravel\Output\InvoiceShowHtml');
+
 Route::get('/', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index');

@@ -144,6 +144,7 @@ return [
 		'SolidLaravel\Providers\ConfigServiceProvider',
 		'SolidLaravel\Providers\EventServiceProvider',
 		'SolidLaravel\Providers\RouteServiceProvider',
+        'SolidLaravel\Providers\InvoiceServiceProvider',
 
 	],
 
